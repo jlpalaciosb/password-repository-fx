@@ -12,6 +12,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import util.GUIUtil;
 import util.GlobalData;
 import util.HibernateUtil;
 
@@ -31,8 +32,7 @@ public class PasswordRepository extends Application {
         try {
             HibernateUtil.buildSessionFactory();
         } catch(Exception ex) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Database Connection Error", ButtonType.OK);
-            alert.showAndWait();
+            GUIUtil.error(null, "Database Connection Error");
             ex.printStackTrace(System.err);
             System.exit(0);
         }
