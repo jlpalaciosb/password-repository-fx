@@ -116,7 +116,7 @@ public class RegisterController implements Initializable {
             info("The password maximum length is 20.");
             valid = false;
         } else if(!ps.matches("[A-Za-z0-9_]+")) {
-            info("The username must only contain letters, numbers, underscores.");
+            info("The password must only contain letters, numbers, underscores.");
             valid = false;
         }
         
