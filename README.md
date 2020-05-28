@@ -4,7 +4,7 @@ This application allows you to save passwords for easy recovery in case you forg
 
 # Demo
 
-You can open [demo.pdf](../blob/master/demo.pdf) to see the application working.
+You can open [demo.pdf](https://github.com/jlpb97/password-repository-fx/blob/master/demo.pdf) to see the application working.
 
 # Technologies Used
 
